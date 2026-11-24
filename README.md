@@ -4,8 +4,8 @@
 
 Školní projekt „Taste Your Personality“: personalizovaná produktová stránka, na které je plechovka limonády reklamou na mě, ne na značku.
 
-🔗 **Web:** https://UZIVATEL.github.io/taste-my-personality/
-📦 **Repozitář:** https://github.com/UZIVATEL/taste-my-personality
+🔗 **Web:** https://kristian-13.github.io/Animation-logo/
+📦 **Repozitář:** https://github.com/Kristian-13/Animation-logo
 
 ## Koncept
 
