@@ -4,171 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kris · Midnight Remix — Taste the Beat</title>
-    <meta name="description" content="Limitovaná edice Midnight Remix – plechovka, která zní jako Kris.">
-    <meta name="theme-color" content="#160B33">
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Kristián · Coca-Cola</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="top">
-        <header class="topbar">
-            <a class="topbar__logo" href="#top">Kris</a>
-            <nav class="topbar__nav" aria-label="Hlavní navigace">
-                <a href="#edice">Edice</a>
-                <a href="#tracklist">Tracklist</a>
-                <a href="#paleta">Paleta</a>
-            </nav>
-            <span class="topbar__badge">Limited · No.01</span>
-        </header>
-
-        <div class="hero__copy">
-            <p class="eyebrow">Limitovaná edice · Midnight Remix</p>
-            <h1 class="slogan">Taste the<br><span>Beat</span></h1>
+    <header>
+        <div class="left">
+            <h1>Taste The Feeling</h1>
+            <img src="images/2.png" alt="">
+        </div>
+        <div class="author">
+            <h3>KRISTIÁN</h3>
+            <div>
+                <p>Design By</p>
+                <p>Kristián</p>
+            </div>
+            <div>
+                <p>Code By</p>
+                <p>Kristián</p>
+            </div>
+            <img src="images/code.png" alt="">
+        </div>
+    </header>
+    <div class="banner">
+        <div class="product">
+            <div class="soda" style="--url: url(images/coca-cola-front-final.png)">
+            </div>
+            <div class="soda" style="--url: url(images/coca-cola-back-final.png)">
+            </div>
         </div>
 
-        <aside class="author">
-            <h3>KRIS</h3>
-            <div><p>Design By</p><p>Kris</p></div>
-            <div><p>Code By</p><p>Kris</p></div>
-            <svg class="author__wave" viewBox="0 0 240 40" aria-hidden="true">
-                <path d="M0 20 Q10 2 20 20 T40 20 T60 20 Q70 -6 80 20 T100 20 Q110 38 120 20 Q130 0 140 20 T160 20 Q170 30 180 20 T200 20 Q210 8 220 20 T240 20" />
-            </svg>
-        </aside>
 
-        <div class="stage" id="stage">
-            <div class="glow layer" style="--depth:.2"></div>
-            <img class="vinyl layer" id="vinyl" style="--depth:.35" src="assets/img/vinyl.svg" alt="">
-
-            <div class="band layer" style="--depth:.5" aria-hidden="true">
-                <div class="band__track">
-                    <span>Taste the beat ✦ Kris ✦ Midnight Remix ✦ Play it loud ✦ </span>
-                    <span>Taste the beat ✦ Kris ✦ Midnight Remix ✦ Play it loud ✦ </span>
-                </div>
-            </div>
-
-            <div class="eq" id="eq" aria-hidden="true"></div>
-
-            <img class="obj obj--headphones layer" style="--depth:1.1" src="assets/img/headphones.svg" alt="Sluchátka">
-            <img class="obj obj--cassette layer" style="--depth:1.3" src="assets/img/cassette.svg" alt="Kazeta Mixtape Vol.1">
-            <img class="obj obj--note obj--note1 layer" style="--depth:1.6" src="assets/img/note.svg" alt="">
-            <img class="obj obj--note obj--note2 layer" style="--depth:.9" src="assets/img/note.svg" alt="">
-
-            <div class="product">
-                <div class="plate"></div>
-                <div class="can" id="can" role="img" aria-label="Plechovka Kris – Midnight Remix, táhni nebo klikni">
-                    <div class="can__label">
-                        <div class="can__strip" id="canStrip">
-                            <div class="can__wrap">
-                                <svg class="can__ribbon" viewBox="0 0 300 160" preserveAspectRatio="none" aria-hidden="true">
-                                    <path class="r1" d="M0 112 C40 84 70 140 110 116 S170 70 210 98 S270 132 300 112 L300 130 C270 150 240 116 210 118 S160 92 110 134 S40 108 0 130Z" />
-                                    <path class="r2" d="M0 104 C40 76 70 132 110 108 S170 62 210 90 S270 124 300 104" />
-                                </svg>
-                                <div class="face face--logo">
-                                    <span class="face__kicker">limited edition · No.01</span>
-                                    <span class="face__script">Kris</span>
-                                    <span class="face__sub">Midnight Remix</span>
-                                </div>
-                                <div class="face face--record">
-                                    <span class="face__disc"></span>
-                                    <span class="face__title">Midnight<br>Remix</span>
-                                    <span class="face__ml">330 ml · sycený nápoj</span>
-                                </div>
-                                <div class="face face--info">
-                                    <span class="face__vertical">Taste the beat</span>
-                                    <span class="face__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-                                    <span class="face__flavor">třešeň ×<br>neon limetka</span>
-                                    <span class="face__barcode"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="can__shade"></div>
-                    <img class="can__mockup" src="assets/img/can-mockup.png" alt="" draggable="false">
-                </div>
-            </div>
-
-            <img class="obj obj--speaker obj--speakerL layer" style="--depth:1.8" src="assets/img/speaker.svg" alt="Reproduktor">
-            <img class="obj obj--speaker obj--speakerR layer" style="--depth:1.5" src="assets/img/speaker.svg" alt="Reproduktor">
+        <div class="rock">
+            <img src="images/rock1.png" alt="">
+            <img src="images/rock2.png" alt="">
+            <img src="images/rock3.png" alt="">
         </div>
+    </div>
 
-        <button class="play" id="playBtn" type="button" aria-pressed="false">
-            <span class="play__icon" aria-hidden="true"></span>
-            <span class="play__text">Pusť to nahlas</span>
-        </button>
-        <p class="hint">Táhni plechovku a roztoč ji · klikni a pusť beat</p>
-    </section>
-
-    <!-- ============ EDICE ============ -->
-    <main>
-        <section class="section edition reveal" id="edice">
-            <p class="eyebrow">Side A</p>
-            <h2>Plechovka, která zní jako já.</h2>
-            <p class="lead">
-                <strong>Midnight Remix</strong> je limitovaná edice pro chvíle, kdy je venku tma, ve sluchátkách
-                hraje playlist na opakování a nápady přicházejí nejlíp. Růžová jako světlo na pódiu,
-                tyrkysová jako ekvalizér a hluboká modrá jako půlnoc. Chuť: <em>třešeň × neonová limetka</em>.
-            </p>
-            <dl class="facts">
-                <div><dt>Edice</dt><dd>Midnight Remix</dd></div>
-                <div><dt>Slogan</dt><dd>Taste the Beat</dd></div>
-                <div><dt>Tempo</dt><dd>120 BPM</dd></div>
-                <div><dt>Objem</dt><dd>330 ml</dd></div>
-            </dl>
-        </section>
-
-        <section class="section tracklist reveal" id="tracklist">
-            <p class="eyebrow">Side B · Tracklist</p>
-            <h2>Co mě definuje</h2>
-            <ol class="tracks">
-                <li>
-                    <img src="assets/img/vinyl.svg" alt="">
-                    <div><h3>01 · Vinyl</h3><p>Točí se za plechovkou jako slunce. Hudba je střed všeho, kolem čeho se můj den točí.</p></div>
-                    <span>3:33</span>
-                </li>
-                <li>
-                    <img src="assets/img/headphones.svg" alt="">
-                    <div><h3>02 · Sluchátka</h3><p>Můj vlastní svět. Nasadím je a okolí se ztiší, zbude jen soustředění a nápady.</p></div>
-                    <span>2:47</span>
-                </li>
-                <li>
-                    <img src="assets/img/cassette.svg" alt="">
-                    <div><h3>03 · Mixtape Vol.1</h3><p>Ručně skládané playlisty pro kamarády. Nejlepší dárek je písnička ve správnou chvíli.</p></div>
-                    <span>4:05</span>
-                </li>
-                <li>
-                    <img src="assets/img/speaker.svg" alt="">
-                    <div><h3>04 · Reproduktory</h3><p>Když už, tak nahlas. Kliknutím na plechovku se roztančí celá stránka.</p></div>
-                    <span>1:58</span>
-                </li>
-            </ol>
-        </section>
-
-        <section class="section palette reveal" id="paleta">
-            <p class="eyebrow">Mix · Barevná paleta</p>
-            <h2>Pět stop, jeden mix</h2>
-            <ul class="swatches">
-                <li style="--c:#160B33"><span>Midnight</span><code>#160B33</code></li>
-                <li style="--c:#FF3D8B"><span>Stage Pink</span><code>#FF3D8B</code></li>
-                <li style="--c:#3CF0FF"><span>EQ Cyan</span><code>#3CF0FF</code></li>
-                <li style="--c:#FFB547"><span>Tape Amber</span><code>#FFB547</code></li>
-                <li style="--c:#FFF1DC"><span>Cream Noise</span><code>#FFF1DC</code></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p class="footer__script">Kris</p>
-        <p>Design &amp; code by Kris · 2026 · Školní projekt „Taste Your Personality“. Nejde o oficiální produkt ani reklamu Coca-Cola.</p>
-        <a href="#top">Zpět nahoru ↑</a>
-    </footer>
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>
