@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 900">
+  <defs>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/><stop offset="1" stop-color="#C6EAFB" stop-opacity=".85"/></linearGradient>
+    <linearGradient id="l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A8DBF4" stop-opacity=".85"/><stop offset="1" stop-color="#4A92C2" stop-opacity=".6"/></linearGradient>
+    <linearGradient id="r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7DBDE3" stop-opacity=".8"/><stop offset="1" stop-color="#2B6596" stop-opacity=".55"/></linearGradient>
+  </defs>
+  <g stroke="#fff" stroke-opacity=".8" stroke-width="3" stroke-linejoin="round">
+    <g transform="translate(150 60)">
+      <polygon points="60,0 110,90 110,840 60,840" fill="url(#r)"/>
+      <polygon points="60,0 10,90 10,840 60,840" fill="url(#l)"/>
+      <path d="M30 120 L30 700" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-opacity=".85"/>
+    </g>
+    <g transform="translate(40 300) rotate(-14 60 300)">
+      <polygon points="50,0 95,80 95,600 50,600" fill="url(#r)"/>
+      <polygon points="50,0 5,80 5,600 50,600" fill="url(#l)"/>
+      <path d="M25 110 L25 420" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-opacity=".85"/>
+    </g>
+    <g transform="translate(270 360) rotate(16 50 300)">
+      <polygon points="45,0 85,70 85,540 45,540" fill="url(#r)"/>
+      <polygon points="45,0 5,70 5,540 45,540" fill="url(#l)"/>
+      <path d="M24 100 L24 360" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-opacity=".85"/>
+    </g>
+  </g>
+  <g fill="#fff" fill-opacity=".7"><circle cx="190" cy="400" r="6"/><circle cx="205" cy="460" r="4"/><circle cx="90" cy="600" r="5"/><circle cx="320" cy="620" r="4"/></g>
+</svg>

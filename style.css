@@ -5,11 +5,13 @@ body {
     margin: 0;
     font-family: Poppins;
     color: #FFFFFF;
-    background-color: #0E0E12;
+    background-color: #07131F;
     background-image:
-        repeating-linear-gradient(to right, transparent 0 150px, #fff1 150px 151px),
-        repeating-linear-gradient(to bottom, transparent 0 150px, #fff1 150px 151px),
-        radial-gradient(circle at 50% 75%, #E4101Bcc 0%, #7A0710 30%, #0E0E12 70%);
+        repeating-linear-gradient(to right, transparent 0 150px, #bfe6ff14 150px 151px),
+        repeating-linear-gradient(to bottom, transparent 0 150px, #bfe6ff14 150px 151px),
+        radial-gradient(circle at 50% 62%, #E4101Bb0 0%, #7A071066 28%, transparent 55%),
+        radial-gradient(ellipse at 50% 110%, #5FB8EE80 0%, transparent 55%),
+        linear-gradient(to bottom, #0A1E33, #07131F);
     background-attachment: fixed;
 }
 
@@ -102,6 +104,11 @@ header .author img {
     mask-size: auto 100%;
 }
 
+/* v klidu je vidět strana se jménem */
+.soda:nth-child(1) {
+    --left: 100%;
+}
+
 .soda:nth-child(2) {
     opacity: 0;
 }
@@ -149,9 +156,58 @@ header .author img {
     position: absolute;
     height: 100%;
     right: 0;
-    bottom: -100px;
-    rotate: -25deg;
+    bottom: -60px;
+    rotate: -12deg;
     transition: 0.7s;
+}
+
+.rock img {
+    filter: drop-shadow(0 0 24px rgba(140, 210, 255, .35));
+}
+
+/* bublinky stoupající za plechovkou */
+.bubbles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.bubbles span {
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% + var(--x));
+    width: var(--s);
+    height: var(--s);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .7);
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .8) 0 15%, rgba(190, 230, 255, .15) 40%, transparent 70%);
+    animation: fizz var(--d) linear var(--delay) infinite;
+    opacity: 0;
+}
+
+.bubbles span:nth-child(1)  { --x: -260px; --s: 14px; --d: 7s;   --delay: 0s; }
+.bubbles span:nth-child(2)  { --x: -180px; --s: 22px; --d: 9s;   --delay: -2s; }
+.bubbles span:nth-child(3)  { --x: -120px; --s: 10px; --d: 6s;   --delay: -4s; }
+.bubbles span:nth-child(4)  { --x: -60px;  --s: 18px; --d: 8s;   --delay: -1s; }
+.bubbles span:nth-child(5)  { --x: 0px;    --s: 12px; --d: 7.5s; --delay: -5s; }
+.bubbles span:nth-child(6)  { --x: 70px;   --s: 26px; --d: 10s;  --delay: -3s; }
+.bubbles span:nth-child(7)  { --x: 130px;  --s: 9px;  --d: 6.5s; --delay: -6s; }
+.bubbles span:nth-child(8)  { --x: 190px;  --s: 16px; --d: 8.5s; --delay: -2.5s; }
+.bubbles span:nth-child(9)  { --x: 250px;  --s: 20px; --d: 9.5s; --delay: -7s; }
+.bubbles span:nth-child(10) { --x: -320px; --s: 11px; --d: 7s;   --delay: -3.5s; }
+.bubbles span:nth-child(11) { --x: 310px;  --s: 13px; --d: 6s;   --delay: -1.5s; }
+.bubbles span:nth-child(12) { --x: -20px;  --s: 30px; --d: 11s;  --delay: -8s; }
+
+@keyframes fizz {
+    0%   { transform: translate(0, 0); opacity: 0; }
+    10%  { opacity: 1; }
+    50%  { transform: translate(18px, -50vh); }
+    90%  { opacity: .8; }
+    100% { transform: translate(-10px, -100vh); opacity: 0; }
+}
+
+.banner:has(.product:hover) .bubbles span {
+    animation-duration: 2.5s;
 }
 
 .banner:has(.product:hover) .rock img:nth-child(1) {

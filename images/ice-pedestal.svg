@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 230">
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#BFE6FA" stop-opacity=".85"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9FD6F2" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#3F86B8" stop-opacity=".6"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7EC0E6" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#2D6C9C" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#FFFFFF" stroke-opacity=".8" stroke-width="3" stroke-linejoin="round">
+    <polygon points="10,80 60,120 60,205 10,160" fill="url(#side)"/>
+    <polygon points="590,80 540,120 540,205 590,160" fill="url(#side)"/>
+    <polygon points="60,120 540,120 540,205 60,205" fill="url(#front)"/>
+    <polygon points="60,40 540,40 590,80 540,120 60,120 10,80" fill="url(#top)"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-linecap="round" fill="none">
+    <path d="M90 60 L230 60" stroke-width="6" stroke-opacity=".9"/>
+    <path d="M250 60 L290 60" stroke-width="6" stroke-opacity=".9"/>
+    <path d="M80 140 L80 185" stroke-width="5" stroke-opacity=".7"/>
+    <path d="M160 150 l40 30 M380 135 l-30 40 M470 150 l25 25" stroke-width="2" stroke-opacity=".6"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity=".7">
+    <circle cx="300" cy="165" r="5"/><circle cx="320" cy="180" r="3"/><circle cx="430" cy="170" r="4"/><circle cx="130" cy="175" r="3"/>
+  </g>
+</svg>
